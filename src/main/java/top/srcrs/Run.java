@@ -125,9 +125,9 @@ public class Run
                     if("0".equals(post.getString("error_code"))){
                         iterator.remove();
                         success.add(rotation);
-                        LOGGER.info(rotation + ": " + "签到成功");
+                        LOGGER.info("签到成功");
                     } else {
-                        LOGGER.warn(rotation + ": " + "签到失败");
+                        LOGGER.warn("签到失败");
                     }
                 }
                 if (success.size() != followNum){
